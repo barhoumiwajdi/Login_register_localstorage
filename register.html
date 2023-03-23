@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4.6.x CDN-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+  integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="container justify-content-center">
+        <!-- Formulaire d'inscription-->
+        <form class="justify-content-center" >
+            <h1 class="text-center text-primary my-4">Créer votre compte</h1>
+            <!-- input type text #nom-->
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" id="nom" placeholder="Saisissez votre nom ici"
+                    >
+                <div class="invalid-feedback">Le nom est obligatoire.</div>
+            </div>
+             <!-- input type text #prenom-->
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Saisissez votre prénom ici"
+                    >
+                <div class="invalid-feedback">Le prénom est obligatoire.</div>
+            </div>
+             <!-- input type email #inputEmail-->
+            <div class="form-group">
+                <label for="inputEmail">E-mail :</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Saisissez votre adresse e-mail ici"
+                    >
+                <div class="invalid-feedback">L'adresse e-mail est invalid</div>
+            </div>
+            <!-- input type password #password-->
+            <div class="form-group">
+                <label for="password">Mot de passe:</label>
+                <input type="password" class="form-control" id="password" placeholder="Saisissez votre  mot de passe ici" >
+                <div class="invalid-feedback">Le mot de passe est obligatoire.</div>
+            </div>
+            <!-- input type password #confirm-->
+            <div class="form-group">
+                <label for="confirm">Confirmation mot de passe :</label>
+                <input type="password" class="form-control" id="confirm" placeholder="Saisissez votre  mot de passe ici" >
+                <div class="invalid-feedback">La confirmation est obligaoire, ou bien la confirmation est invalid</div>
+            </div>
+            <button id="inscrire" type="submit" class="btn btn-success btn-block">S'inscrire</button>
+        </form>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+    <!-- app.js-->  
+    <script src="script.js"></script>  
+</body>
+</html>
